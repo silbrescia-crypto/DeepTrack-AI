@@ -41,6 +41,9 @@ class DeepTrackAPITester:
             elif method == 'POST':
                 if files:
                     response = requests.post(url, data=data, files=files, timeout=60)
+                elif endpoint == 'analyze':
+                    # For analyze endpoint, send as form data
+                    response = requests.post(url, data=data, timeout=60)
                 else:
                     headers['Content-Type'] = 'application/json'
                     response = requests.post(url, json=data, headers=headers, timeout=60)
