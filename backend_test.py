@@ -139,9 +139,9 @@ class DeepTrackAPITester:
             print("   ⚠️  No uploaded files available for analysis")
             return False
             
-        # Send as form data instead of JSON
+        # Send as JSON body
         data = {
-            'file_ids': self.uploaded_files[0],  # Send single file_id as string
+            'file_ids': [self.uploaded_files[0]],  # Send as list
             'analysis_type': 'single'
         }
         
