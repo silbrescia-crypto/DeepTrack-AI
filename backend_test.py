@@ -111,7 +111,7 @@ class DeepTrackAPITester:
             })
         }
         
-        success, response = self.run_test("File Upload", "POST", "upload", 201, data=data, files=files)
+        success, response = self.run_test("File Upload", "POST", "upload", 200, data=data, files=files)
         
         if success and 'id' in response:
             self.uploaded_files.append(response['id'])
