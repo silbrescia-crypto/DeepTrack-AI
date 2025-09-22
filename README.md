@@ -1,5 +1,4 @@
-# 
-Action: Ho creato un'applicazione completa per Target Recognition & Tracking con deep learning su dati multispettrali chiamata "DeepTrack AI". L'app comprende:
+# Ho creato un'applicazione completa per Target Recognition & Tracking con deep learning su dati multispettrali chiamata "DeepTrack AI". L'app comprende:
 
 **COMPONENTI IMPLEMENTATI:**
 1. **Backend FastAPI** (/app/backend/server.py):
